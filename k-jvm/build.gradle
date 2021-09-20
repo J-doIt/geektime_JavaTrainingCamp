@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+}
+
+sourceCompatibility = 12
+targetCompatibility = 12
+
+repositories {
+    maven { url 'https://maven.aliyun.com/repository/public/' }
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:3.0.5'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    implementation group: 'com.google.guava', name: 'guava', version: '30.1.1-jre'
+}
+
+task "create-dirs" {
+    sourceSets*.java.srcDirs*.each {
+        it.mkdirs()
+    }
+    sourceSets*.resources.srcDirs*.each {
+        it.mkdirs()
+    }
+}
+
+//task(runMain, dependsOn: 'classes', typy: JavaExec) {
+//    main = 'org.kayla.jvm.XlassClassLoader'
+//    classpath = sourceSets.main.runtiimeClasspath
+//}
+apply plugin: 'application'
+mainClassName='org.kayla.jvm.XlassClassLoader'
+
+test {
+    useJUnitPlatform()
+}
