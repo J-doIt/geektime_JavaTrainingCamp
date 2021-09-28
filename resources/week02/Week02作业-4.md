@@ -8,22 +8,22 @@
 
 串行GC
 
-![1632672423906](https://github.com/J-doIt/geektime_java_tc/blob/main/k-jvm/src/main/resources/img/SerGC-1.jpg)
+![串行GC-内存大小](https://github.com/J-doIt/geektime_java_tc/blob/main/resources/week02/img/SerGC-1.jpg)
 
 
 
 并行GC
 
-![1632672452536](https://github.com/J-doIt/geektime_java_tc/blob/main/k-jvm/src/main/resources/img/ParGC-1.jpg)
+![并行GC-内存大小](https://github.com/J-doIt/geektime_java_tc/blob/main/resources/week02/img/ParGC-1.jpg)
 
 
 CMS GC
 
-![img](https://github.com/J-doIt/geektime_java_tc/blob/main/k-jvm/src/main/resources/img/CMSGC-1.jpg) 
+![CMS GC-内存大小](https://github.com/J-doIt/geektime_java_tc/blob/main/resources/week02/img/CMSGC-1.jpg) 
 
 G1 GC
 
-![img](https://github.com/J-doIt/geektime_java_tc/blob/main/k-jvm/src/main/resources/img/G1GC-1.jpg) 
+![G1 GC-内存大小](https://github.com/J-doIt/geektime_java_tc/blob/main/resources/week02/img/G1GC-1.jpg) 
 
  
 
@@ -35,27 +35,27 @@ G1 GC
 - 但区别最大的是G1 GC，它的内存分配要比其他三个的多分配大约0.3倍，这很可能是因为G1 GC中不再分为年轻代和老年代，而是划分成了多个小块堆区域，每个小块在不同的时间，都有可能存放不同特性的数据。
 
 
- 
 
- 
 
- 
+
+
+
 
 串行GC
 
-![img](https://github.com/J-doIt/geektime_java_tc/blob/main/k-jvm/src/main/resources/img/SerGC-2.jpg) 
+![串行GC-指标](https://github.com/J-doIt/geektime_java_tc/blob/main/resources/week02/img/SerGC-2.jpg) 
 
 并行GC
 
-![img](https://github.com/J-doIt/geektime_java_tc/blob/main/k-jvm/src/main/resources/img/ParGC-2.jpg) 
+![并行GC-指标](https://github.com/J-doIt/geektime_java_tc/blob/main/resources/week02/img/ParGC-2.jpg) 
 
 CMS GC
 
-![img](https://github.com/J-doIt/geektime_java_tc/blob/main/k-jvm/src/main/resources/img/CMSGC-2.jpg) 
+![CMS GC-指标](https://github.com/J-doIt/geektime_java_tc/blob/main/resources/week02/img/CMSGC-2.jpg) 
 
 G1 GC
 
-![img](https://github.com/J-doIt/geektime_java_tc/blob/main/k-jvm/src/main/resources/img/G1GC-2.jpg) 
+![G1 GC-指标](https://github.com/J-doIt/geektime_java_tc/blob/main/resources/week02/img/G1GC-2.jpg) 
 
 
 
@@ -67,13 +67,13 @@ G1 GC
 - 串行GC的暂停时间有1.23%用了`30~60`毫秒，并行GC有1.64%的GC暂停时间处于`20~30`毫秒，两个明显没有CMS GC和G1 GC的吞度量高；
 
 
- 
 
- 
 
- 
 
- 
+
+
+
+
 
 待完善...
 
