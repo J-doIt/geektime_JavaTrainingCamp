@@ -5,7 +5,7 @@
 #### 串行GC - 128m
 
 ```sh
-> cd E:\geektime_JavaTrainingCamp\data\week1\jvm
+> cd E:\gk_java_tc\working-area\k-jvm\out\production\classes
 > java -XX:+UseSerialGC -XX:+PrintGCDetails -Xloggc:gc.ser128.log -Xmx128m -Xms128m org.kayla.jvm.GCLogAnalysis
 ```
 
