@@ -18,3 +18,15 @@
    1.  HttpClient.java (以GET请求的方式请求`http://127.0.0.1:8808/`)
    2.  HttpClientHelper.java (从线程池获取客户端并使用长连接，去请求`http://127.0.0.1:8808/test`)
 
+## Week 03
+1. [ * 整合上次作业的 httpclient/okhttp ]()
+   - 在提示的基础上，整合前面的作业里去实现的客户端，去真实地去调用一个后端的业务服务，然后再把它的响应结果返回给前端的客户端；
+2. 使用 netty 实现后端 http 访问（代替上一步骤）
+   - 使用 Netty 创建一个客户端，去访问后端的业务服务，然后拿到响应的结果；
+3. [ * 实现过滤器 ](https://github.com/J-doIt/geektime_java_tc/blob/main/k-nio-02/src/main/java/org/kayla/gateway/NettyServerApplication.java)
+   - 按照给大家提示写的Filter的接口去实现一个Filter；比如说对所有请求做一次过滤，添加一个请求头，再发给后端的业务服务；比如给请求头里面加一个 xjava 这么个 key，然后通过 HpptClient/OkHttp 请求后端的具体的真实的业务服务的时候，把这个头带进去；
+4. 实现路由
+   - 让后端 可以同时支撑多个业务服务的实例，让它们能够做负载均衡；
+5. 跑一跑课上的各个例子，加深对多线程的理解
+6. 完善网关的例子，试着调整其中的线程池参数
+7. ++ 实现一个http文件服务器和一个ftp文件服务器
