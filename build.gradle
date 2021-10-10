@@ -7,6 +7,7 @@ plugins {
     version '1.0-SNAPSHOT'
 
     repositories {
+        mavenLocal();
         maven { url 'https://maven.aliyun.com/repository/public/' }
         mavenCentral()
     }

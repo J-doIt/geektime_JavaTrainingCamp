@@ -1,0 +1,5 @@
+rootProject.name = 'working-area'
+include 'k-jvm'
+include 'k-nio'
+include 'k-nio-02'
+
