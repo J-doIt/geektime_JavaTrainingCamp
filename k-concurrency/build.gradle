@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+sourceCompatibility = 12
+targetCompatibility = 12
+
+group 'org.kayla.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal();
+    maven { url 'https://maven.aliyun.com/repository/public/' }
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':k-nio-02')
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.22'
+}
+
+test {
+    useJUnitPlatform()
+}

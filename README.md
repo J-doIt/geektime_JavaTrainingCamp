@@ -30,3 +30,6 @@
 5. 跑一跑课上的各个例子，加深对多线程的理解
 6. 完善网关的例子，试着调整其中的线程池参数
 7. ++ 实现一个http文件服务器和一个ftp文件服务器
+
+## Week 04 - 并发编程
+- [Week04 作业](https://github.com/J-doIt/geektime_java_tc/tree/main/k-concurrency/src/main/java/org/kayla/concurrency)
