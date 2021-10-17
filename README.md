@@ -32,4 +32,4 @@
 7. ++ 实现一个http文件服务器和一个ftp文件服务器
 
 ## Week 04 - 并发编程
-- [Week04 作业](https://github.com/J-doIt/geektime_java_tc/tree/main/k-concurrency/src/main/java/org/kayla/concurrency)
+- [Week04 作业](https://github.com/J-doIt/geektime_java_tc/tree/main/k-concurrency)
