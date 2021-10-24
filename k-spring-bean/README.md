@@ -20,7 +20,7 @@
 8. [（必做）给前面课程提供的 Student/Klass/School 实现自动配置和 Starter。](https://github.com/J-doIt/geektime_java_tc/blob/main/k-spring-bean-starter/src/main/java/org/kayla/springbean/SpringbeanApplication.java)
 
 9. （选做）学习 MyBatis-generator 的用法和原理，学会自定义 TypeHandler 处理复杂类型。
-10. （必做）研究一下 JDBC 接口和数据库连接池，掌握它们的设计和用法：
+10. [（必做）研究一下 JDBC 接口和数据库连接池，掌握它们的设计和用法；](https://github.com/J-doIt/geektime_java_tc/blob/main/resources/week05/JDBC_record.md)
 11. 附加题（可以后面上完数据库的课再考虑做）：
     1. (挑战) 基于 AOP 和自定义注解，实现 @MyCache(60) 对于指定方法返回值缓存 60 秒。 
     2. (挑战) 自定义实现一个数据库连接池，并整合 Hibernate/Mybatis/Spring/SpringBoot。

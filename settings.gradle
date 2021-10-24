@@ -4,4 +4,5 @@ include 'k-nio'
 include 'k-nio-02'
 include 'k-concurrency'
 include 'k-spring-bean'
+include 'k-spring-bean-starter'
 
