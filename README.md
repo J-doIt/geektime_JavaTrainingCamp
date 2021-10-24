@@ -33,3 +33,6 @@
 
 ## Week 04 - 并发编程
 - [Week04 作业](https://github.com/J-doIt/geektime_java_tc/tree/main/k-concurrency)
+
+## Week 05 - Java相关框架
+- [Week05 作业](https://github.com/J-doIt/geektime_java_tc/tree/main/k-spring-bean)

@@ -3,4 +3,5 @@ include 'k-jvm'
 include 'k-nio'
 include 'k-nio-02'
 include 'k-concurrency'
+include 'k-spring-bean'
 

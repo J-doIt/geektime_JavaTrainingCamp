@@ -1,0 +1,42 @@
+plugins {
+    id 'org.springframework.boot' version '2.5.6'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group 'org.kayla.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal();
+    maven { url 'https://maven.aliyun.com/repository/public/' }
+    mavenCentral()
+}
+
+configurations {
+    all {
+        /// 在所有项目中移除 默认的 logging
+        exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+        exclude module: 'logback-classic'
+        exclude module: "logback-core"
+    }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-configuration-processor:2.5.6'
+    implementation 'org.springframework.boot:spring-boot-autoconfigure:2.5.6'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.5.6'
+    implementation "org.springframework.boot:spring-boot-starter-log4j2:2.5.6"
+
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    implementation 'com.google.guava:guava:31.0.1-jre'
+
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
