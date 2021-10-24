@@ -3,8 +3,9 @@
 1. （选做）使 Java 里的动态代理，实现一个简单的 AOP。
 
 2. （必做）写代码实现 Spring Bean 的装配，方式越多越好（XML、Annotation 都可以）, 提交到 GitHub。 （自定义xml、自定义命名空间、java config、Spring boot 自动装配）
-   1. [ML、Annotation](https://github.com/J-doIt/geektime_java_tc/blob/main/k-spring-bean/src/main/java/org/kayla/springbean/SpringMain.java)
+   1. [XML、Annotation](https://github.com/J-doIt/geektime_java_tc/blob/main/k-spring-bean/src/main/java/org/kayla/springbean/SpringMain.java)
    2. Starter
+   ![SpringMain 运行结果](https://github.com/J-doIt/geektime_java_tc/blob/main/k-spring-bean/src/main/resources/img_1.png)
    
 3. （选做）实现一个 Spring XML 自定义配置，配置一组 Bean，例如：Student/Klass/School。
 4. （选做，会添加到高手附加题）
@@ -18,6 +19,7 @@
 7. （选做）总结 Hibernate 与 MyBatis 的各方面异同点。
 
 8. [（必做）给前面课程提供的 Student/Klass/School 实现自动配置和 Starter。](https://github.com/J-doIt/geektime_java_tc/blob/main/k-spring-bean-starter/src/main/java/org/kayla/springbean/SpringbeanApplication.java)
+    ![SpringbeanApplication 运行结果](https://github.com/J-doIt/geektime_java_tc/blob/main/k-spring-bean/src/main/resources/img.png)
 
 9. （选做）学习 MyBatis-generator 的用法和原理，学会自定义 TypeHandler 处理复杂类型。
 10. [（必做）研究一下 JDBC 接口和数据库连接池，掌握它们的设计和用法；](https://github.com/J-doIt/geektime_java_tc/blob/main/resources/week05/JDBC_record.md)
