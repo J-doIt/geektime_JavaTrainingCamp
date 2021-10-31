@@ -36,3 +36,6 @@
 
 ## Week 05 - Java相关框架
 - [Week05 作业](https://github.com/J-doIt/geektime_java_tc/tree/main/k-spring-bean)
+
+## Week 06 - 系统性能优化
+- [Week06 作业](https://github.com/J-doIt/geektime_java_tc/blob/main/resources/week06/README.md)
