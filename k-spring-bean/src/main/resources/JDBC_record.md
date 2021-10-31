@@ -125,7 +125,7 @@ public class DriverManager {
 >
 > 把 **Driver 实现类**注册到 DriverManager 之后（ `DriverManager.registerDriver(new Driver()) `），后续所有对 JDBC 接口的调用，都会**委派**到 Driver 实现类来执行。而 Driver 实现类都**实现了相同的接口**（`java.sql.Driver `），这也是可以灵活切换 Driver 的原因。
 
-<img src="https://github.com/J-doIt/geektime_java_tc/blob/main/resources/week05/img_2.png" alt="java.sql.Driver 源码" style="zoom:50%;" />
+<img src="https://github.com/J-doIt/geektime_java_tc/blob/main/k-spring-bean/src/main/resources/img_jdbc_2.png" alt="java.sql.Driver 源码" style="zoom:50%;" />
 
 
 #### 理解桥接模式的关键
@@ -136,4 +136,4 @@ public class DriverManager {
 那在 JDBC 这个例子中，什么是"抽象"？什么是"实现"呢？
 - 实际上，JDBC 本身就相当于“抽象”（标准、规范、协议、约定......）。这里所说的“抽象”，指的并非“抽象类”或“接口”，而是跟具体的数据库无关的、被抽象出来的一套“类库”。具体的 Driver（比如，com.mysql.jdbc.Driver）就相当于“实现”（根据“协议、规范”开发的中间件、库、框架......）。注意，这里所说的“实现”，也并非指“接口的实现类”，而是跟具体数据库相关的一套“类库”。JDBC 和 Driver **独立开发，通过对象之间的组合关系，组装在一起（**`DriverManager.registeredDrivers` **）。JDBC 的所有逻辑操作，最终都委托给 Driver 来执行**。
 
-<img src="https://github.com/J-doIt/geektime_java_tc/blob/main/resources/week05/img_1.png" alt="JDBC 接口与具体的实现类 Driver 关系图" style="zoom:50%;" />
+<img src="https://github.com/J-doIt/geektime_java_tc/blob/main/k-spring-bean/src/main/resources/img_jdbc_1.png" alt="JDBC 接口与具体的实现类 Driver 关系图" style="zoom:50%;" />
